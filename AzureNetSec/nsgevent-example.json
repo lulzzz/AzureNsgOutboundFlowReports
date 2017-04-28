@@ -1,0 +1,1036 @@
+﻿{
+  "records": [
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_104.43.128.0-17",
+        "direction": "Out",
+        "priority": 2833,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "104.43.128.0/17",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_104.44.88.0-21",
+        "direction": "Out",
+        "priority": 2834,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "104.44.88.0/21",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_104.44.128.0-19",
+        "direction": "Out",
+        "priority": 2835,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "104.44.128.0/19",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_104.45.128.0-18",
+        "direction": "Out",
+        "priority": 2836,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "104.45.128.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_104.45.192.0-18",
+        "direction": "Out",
+        "priority": 2837,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "104.45.192.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_104.46.0.0-21",
+        "direction": "Out",
+        "priority": 2838,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "104.46.0.0/21",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_104.46.96.0-19",
+        "direction": "Out",
+        "priority": 2839,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "104.46.96.0/19",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_104.46.192.0-20",
+        "direction": "Out",
+        "priority": 2840,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "104.46.192.0/20",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_104.47.192.0-19",
+        "direction": "Out",
+        "priority": 2841,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "104.47.192.0/19",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_104.208.0.0-18",
+        "direction": "Out",
+        "priority": 2842,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "104.208.0.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_104.208.128.0-18",
+        "direction": "Out",
+        "priority": 2843,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "104.208.128.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_104.208.192.0-18",
+        "direction": "Out",
+        "priority": 2844,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "104.208.192.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_104.209.0.0-18",
+        "direction": "Out",
+        "priority": 2845,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "104.209.0.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_104.209.128.0-17",
+        "direction": "Out",
+        "priority": 2846,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "104.209.128.0/17",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_104.210.0.0-18",
+        "direction": "Out",
+        "priority": 2847,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "104.210.0.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_104.210.128.0-18",
+        "direction": "Out",
+        "priority": 2848,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "104.210.128.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_104.210.192.0-19",
+        "direction": "Out",
+        "priority": 2849,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "104.210.192.0/19",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_104.211.0.0-18",
+        "direction": "Out",
+        "priority": 2850,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "104.211.0.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_104.214.0.0-17",
+        "direction": "Out",
+        "priority": 2851,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "104.214.0.0/17",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_104.215.64.0-18",
+        "direction": "Out",
+        "priority": 2852,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "104.215.64.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_137.116.0.0-18",
+        "direction": "Out",
+        "priority": 2853,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "137.116.0.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_137.116.64.0-18",
+        "direction": "Out",
+        "priority": 2854,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "137.116.64.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_137.116.184.0-21",
+        "direction": "Out",
+        "priority": 2855,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "137.116.184.0/21",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_137.117.0.0-18",
+        "direction": "Out",
+        "priority": 2856,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "137.117.0.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_137.117.64.0-18",
+        "direction": "Out",
+        "priority": 2857,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "137.117.64.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_137.135.0.0-18",
+        "direction": "Out",
+        "priority": 2858,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "137.135.0.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_137.135.64.0-18",
+        "direction": "Out",
+        "priority": 2859,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "137.135.64.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_138.91.64.0-18",
+        "direction": "Out",
+        "priority": 2860,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "138.91.64.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_138.91.128.0-18",
+        "direction": "Out",
+        "priority": 2861,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "138.91.128.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_138.91.192.0-18",
+        "direction": "Out",
+        "priority": 2862,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "138.91.192.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_157.55.0.0-18",
+        "direction": "Out",
+        "priority": 2863,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "157.55.0.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_157.55.64.0-18",
+        "direction": "Out",
+        "priority": 2864,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "157.55.64.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_157.55.128.0-18",
+        "direction": "Out",
+        "priority": 2865,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "157.55.128.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_157.55.192.0-18",
+        "direction": "Out",
+        "priority": 2866,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "157.55.192.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_157.56.0.0-19",
+        "direction": "Out",
+        "priority": 2867,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "157.56.0.0/19",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_157.56.160.0-19",
+        "direction": "Out",
+        "priority": 2868,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "157.56.160.0/19",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_168.61.0.0-18",
+        "direction": "Out",
+        "priority": 2869,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "168.61.0.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_168.61.64.0-20",
+        "direction": "Out",
+        "priority": 2870,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "168.61.64.0/20",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_168.61.128.0-18",
+        "direction": "Out",
+        "priority": 2871,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "168.61.128.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_168.61.192.0-18",
+        "direction": "Out",
+        "priority": 2872,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "168.61.192.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_168.62.0.0-18",
+        "direction": "Out",
+        "priority": 2873,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "168.62.0.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_168.62.96.0-19",
+        "direction": "Out",
+        "priority": 2874,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "168.62.96.0/19",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    },
+    {
+      "time": "2017-04-28T03:11:55.6840000Z",
+      "systemId": "6d00e2cc-a873-42dc-bf71-d7defcb2370a",
+      "category": "NetworkSecurityGroupEvent",
+      "resourceId": "/SUBSCRIPTIONS/CECEA5C9-0754-4A7F-B5A9-46AE68DCAFD3/RESOURCEGROUPS/NSG-SEN-PROD/PROVIDERS/MICROSOFT.NETWORK/NETWORKSECURITYGROUPS/APIPOC-WEB",
+      "operationName": "NetworkSecurityGroupEvents",
+      "properties": {
+        "vnetResourceGuid": "{9D350862-7525-4AC9-9E06-8E44A452CC8C}",
+        "subnetPrefix": "10.1.0.0/24",
+        "macAddress": "00-0D-3A-60-43-C3",
+        "primaryIPv4Address": "10.1.0.9",
+        "ruleName": "UserRule_Allow_Azure_Out_168.62.128.0-18",
+        "direction": "Out",
+        "priority": 2875,
+        "type": "allow",
+        "conditions": {
+          "protocols": "6",
+          "destinationPortRange": "0-65535",
+          "sourcePortRange": "0-65535",
+          "destinationIP": "168.62.128.0/18",
+          "sourceIP": "0.0.0.0/0"
+        }
+      }
+    }
+  ]
+}

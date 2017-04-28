@@ -1,0 +1,20 @@
+﻿{
+  "disabled": true,
+  "scriptFile": "..\\bin\\AzureNetSec.dll",
+  "entryPoint": "AzureNetSec.UpdateAzureIpRanges.Run",
+  "bindings": [
+    {
+      "name": "myTimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 0 0 * * *"
+    },
+    {
+      "type": "table",
+      "name": "outputTable",
+      "tableName": "DatacenterIpRanges",
+      "connection": "AzureWebJobsStorage",
+      "direction": "out"
+    }
+  ]
+}
