@@ -6,7 +6,7 @@ using System.Web;
 
 namespace AzureNetSec.Entities
 {
-    public class DatacenterIpRange : TableEntity
+    public class DatacenterIpRanges : TableEntity
     {
         public string Subnet { get; set; }
     }

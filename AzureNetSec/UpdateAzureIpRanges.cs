@@ -57,7 +57,7 @@ namespace AzureNetSec
                     });
                     */
 
-                    TableOperation insertOperation = TableOperation.Insert(new DatacenterIpRange
+                    TableOperation insertOperation = TableOperation.Insert(new DatacenterIpRanges
                     {
                         PartitionKey = partition,
                         RowKey = Guid.NewGuid().ToString(),

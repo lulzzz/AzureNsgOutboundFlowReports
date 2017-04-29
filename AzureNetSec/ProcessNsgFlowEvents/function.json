@@ -1,0 +1,28 @@
+﻿{
+  "bindings": [
+    {
+      "type": "blobTrigger",
+      "name": "nsgFlowBlob",
+      "path": "insights-logs-networksecuritygroupflowevent",
+      "connection": "AzureWebJobsStorage",
+      "direction": "in"
+    },
+    {
+      "type": "table",
+      "name": "nsgEventStatsTableIn",
+      "tableName": "NsgEventStats",
+      "connection": "AzureWebJobsStorage",
+      "direction": "in"
+    },
+    {
+      "type": "queue",
+      "name": "outputQueueItem",
+      "queueName": "datacenteraccess",
+      "connection": "AzureWebJobsStorage",
+      "direction": "out"
+    }
+  ],
+  "disabled": false,
+  "scriptFile": "..\\bin\\AzureNetSec.dll",
+  "entryPoint": "AzureNetSec.ProcessNsgFlowEvents.Run"
+}
