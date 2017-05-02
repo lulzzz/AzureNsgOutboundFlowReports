@@ -8,19 +8,19 @@ namespace AzureNetSec.Entities
     public class NetworkFlow
     {
         public string NsgID;
-        public string SourceIP;
+        // public string SourceIP;
         public string DestIP;
         public string DestPort;
         public string Protocol;
         public override bool Equals(object obj)
         {
-            NetworkFlow msg = obj as NetworkFlow;
-            return msg != null && msg.SourceIP == this.SourceIP && msg.DestIP == this.DestIP && msg.DestPort == this.DestPort;
+            NetworkFlow netflow = obj as NetworkFlow;
+            return netflow != null && netflow.NsgID == this.NsgID && netflow.DestIP == this.DestIP && netflow.DestPort == this.DestPort;
         }
 
         public override int GetHashCode()
         {
-            return this.SourceIP.GetHashCode() ^ this.DestIP.GetHashCode() ^ this.DestPort.GetHashCode();
+            return this.NsgID.GetHashCode() ^ this.DestIP.GetHashCode() ^ this.DestPort.GetHashCode();
         }
     }
 }

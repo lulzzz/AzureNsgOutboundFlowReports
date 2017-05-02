@@ -110,7 +110,8 @@
     <Content Include="appsettings.json" />
     <Content Include="host.json" />
     <Content Include="nsgevent-example.json" />
-    <Content Include="ProcessNsgFlowEvents\function.json" />
+    <Content Include="FilterNsgFlowEvents\function.json" />
+    <Content Include="UpdateNsgFlowStats\function.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -122,15 +123,18 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\AzureDatacenterSubnet.cs" />
     <Compile Include="Entities\DatacenterIpMatchMessage.cs" />
     <Compile Include="Entities\DatacenterIpRanges.cs" />
-    <Compile Include="Entities\NetworkFlowMessage.cs" />
+    <Compile Include="Entities\NetworkFlowProcessStatus.cs" />
+    <Compile Include="Entities\NsgFlowStats.cs" />
     <Compile Include="Entities\NsgRuleEvents.cs" />
     <Compile Include="Entities\NsgFlowEvents.cs" />
     <Compile Include="Entities\NetworkFlow.cs" />
-    <Compile Include="ProcessNsgFlowEvents.cs" />
+    <Compile Include="FilterNsgFlowEvents\FilterNsgFlowEvents.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UpdateAzureIpRanges.cs" />
+    <Compile Include="UpdateAzureIpRanges\UpdateAzureIpRanges.cs" />
+    <Compile Include="UpdateNsgFlowStats\UpdateNsgFlowStats.cs" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,35 @@
+﻿{
+  "bindings": [
+    {
+      "name": "nsgFlowsIn",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "nsgflows",
+      "connection": "AzureWebJobsStorage"
+    },
+    {
+      "type": "table",
+      "name": "nsgFlowStatsIn",
+      "tableName": "NsgFlowStats",
+      "connection": "AzureWebJobsStorage",
+      "direction": "in"
+    },
+    {
+      "type": "table",
+      "name": "azureNetworksIn",
+      "tableName": "DatacenterIpRanges",
+      "connection": "AzureWebJobsStorage",
+      "direction": "in"
+    },
+    {
+      "type": "table",
+      "name": "nsgFlowStatsOut",
+      "tableName": "NsgFlowStats",
+      "connection": "AzureWebJobsStorage",
+      "direction": "out"
+    }
+  ],
+  "disabled": false,
+  "scriptFile": "..\\bin\\AzureNetSec.dll",
+  "entryPoint": "AzureNetSec.UpdateNsgFlowStats.Run"
+}

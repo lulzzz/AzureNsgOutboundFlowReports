@@ -8,6 +8,7 @@ using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Azure.WebJobs;
 using Microsoft.WindowsAzure.Storage.Table;
 using AzureNetSec.Entities;
+using Newtonsoft.Json.Linq;
 
 namespace AzureNetSec
 {
@@ -16,6 +17,8 @@ namespace AzureNetSec
         // public static async void Run(TimerInfo myTimer, TraceWriter log, ICollection<DatacenterIpRange> outputTable)
         public static async void Run(TimerInfo myTimer, TraceWriter log, CloudTable outputTable)
         {
+            List<DatacenterIpRanges> datacenters = new List<DatacenterIpRanges>();
+
             // Load the datacenter IP ranges from the web
             HttpClient client = new HttpClient();
             HttpResponseMessage downloadPageResponse = await client.GetAsync("https://www.microsoft.com/en-us/download/confirmation.aspx?id=41653");
@@ -57,12 +60,16 @@ namespace AzureNetSec
                     });
                     */
 
-                    TableOperation insertOperation = TableOperation.Insert(new DatacenterIpRanges
+                    DatacenterIpRanges datacenter = new DatacenterIpRanges
                     {
                         PartitionKey = partition,
                         RowKey = Guid.NewGuid().ToString(),
                         Subnet = subnet
-                    });
+                    };
+                    datacenters.Add(datacenter);
+
+                    /*
+                    TableOperation insertOperation = TableOperation.Insert(datacenter);
 
                     try
                     {
@@ -73,9 +80,9 @@ namespace AzureNetSec
                     {
                         log.Error(ex.Message);
                     }
+                    */
                 }
             }
-
         }
 
     }

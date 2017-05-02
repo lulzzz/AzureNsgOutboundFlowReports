@@ -9,20 +9,27 @@
     },
     {
       "type": "table",
-      "name": "nsgEventStatsTableIn",
-      "tableName": "NsgEventStats",
+      "name": "updateStatusIn",
+      "tableName": "NetworkFlowProcessStatus",
       "connection": "AzureWebJobsStorage",
       "direction": "in"
     },
     {
+      "type": "table",
+      "name": "updateStatusOut",
+      "tableName": "NetworkFlowProcessStatus",
+      "connection": "AzureWebJobsStorage",
+      "direction": "out"
+    },
+    {
       "type": "queue",
       "name": "outputQueueItem",
-      "queueName": "datacenteraccess",
+      "queueName": "nsgflows",
       "connection": "AzureWebJobsStorage",
       "direction": "out"
     }
   ],
   "disabled": false,
   "scriptFile": "..\\bin\\AzureNetSec.dll",
-  "entryPoint": "AzureNetSec.ProcessNsgFlowEvents.Run"
+  "entryPoint": "AzureNetSec.FilterNsgFlowEvents.Run"
 }
