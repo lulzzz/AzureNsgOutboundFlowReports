@@ -1,5 +1,9 @@
 # Introduction
-This is a collection of Azure Functions that provides a report of all outbound traffic for Network Security Groups (NSGs). This report is useful for anlayzing the impact when implementing more restrictive outbound network rules. There are three functions in this solution:
+This is a collection of Azure Functions that provides a report of all outbound traffic for Network Security Groups (NSGs). This report is useful for anlayzing the impact when implementing more restrictive outbound network rules.
+
+![Outbound IP report](/images/outbount-ip-report.png)
+
+There are three functions in this solution:
 
 ##UpdateAzureIpRanges
 This is a timer-triggered function that downloads the published Microsoft Azure IP ranges and stores them in a storage table (DatacenterIpRanges).
