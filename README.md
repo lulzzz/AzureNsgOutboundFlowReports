@@ -5,13 +5,13 @@ This is a collection of Azure Functions that provides a report of all outbound t
 
 There are three functions in this solution:
 
-##UpdateAzureIpRanges
+## UpdateAzureIpRanges
 This is a timer-triggered function that downloads the published Microsoft Azure IP ranges and stores them in a storage table (DatacenterIpRanges).
 
-##FilterNsgFlowEvents
+## FilterNsgFlowEvents
 This is a blob-triggered function that parses Network Security Group flow logs (PT1H.json files). It filters on network flow events that match the default NSG outbound rule (DefaultRule_AllowInternetOutBound) and writes out flow tuple data (NSG ID, destination IP, destination port, protocol) to an Azure Queue message. Flow tuple ata is de-duplicated 
 
-##UpdateNsgFlowStats
+## UpdateNsgFlowStats
 This is a queue-triggered function that processes de-duplicated flow tuples from FilterNsgFlowEvents. Each destination IP address is compared to a recent list of known Azure IP subnets. If the destination IP address falls within such a subnet, it is documented in the output report.
 
 # Getting Started
