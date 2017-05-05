@@ -1,5 +1,14 @@
 # Introduction
-This is a collection of Azure Functions that provides a report of all outbound traffic for Network Security Groups (NSGs) that matches the default rule "DefaultRule_AllowInternetOutBound". This report is useful for anlayzing the impact when implementing more restrictive outbound network rules.
+This is a collection of Azure Functions that provides a report of all outbound traffic for Network Security Groups (NSGs). This report is useful for anlayzing the impact when implementing more restrictive outbound network rules. There are three functions in this solution:
+
+##UpdateAzureIpRanges
+This is a timer-triggered function that downloads the published Microsoft Azure IP ranges and stores them in a storage table (DatacenterIpRanges).
+
+##FilterNsgFlowEvents
+This is a blob-triggered function that parses Network Security Group flow logs (PT1H.json files). It filters on network flow events that match the default NSG outbound rule (DefaultRule_AllowInternetOutBound) and writes out flow tuple data (NSG ID, destination IP, destination port, protocol) to an Azure Queue message. Flow tuple ata is de-duplicated 
+
+##UpdateNsgFlowStats
+This is a queue-triggered function
 
 # Getting Started
 
@@ -13,7 +22,7 @@ This is a collection of Azure Functions that provides a report of all outbound t
 2.  Enable "NetworkSecurityGroupFlowEvent" in the Diagnostics section for each NSG. Ensure the target storage account is the same as the one configured for Azure Functions
 
 ## Clone the source and configure integration with Functions
-Clone the repository to your computer and upload it to your own repository. 
+Clone the repository to your computer and upload it to your own repository of choice (Visual Studio Online, GitHub, Bitbucket, etc...). Navigate to your Function App and configure your source repository in Platform Features > Deployment Options. Shortly after this, three functions will be deployed to your Function App.
 
 # Build and Test
 TODO: Describe and show how to build your code and run the tests. 
