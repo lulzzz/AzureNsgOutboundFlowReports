@@ -1,7 +1,7 @@
 # Introduction
 This is a collection of Azure Functions that provides a report of all outbound traffic for Network Security Groups (NSGs). This report is useful for anlayzing the impact when implementing more restrictive outbound network rules.
 
-![Outbound IP report](/images/outbount-ip-report.png)
+![Outbound IP report](/images/outbound-ip-report.png)
 
 There are three functions in this solution:
 
