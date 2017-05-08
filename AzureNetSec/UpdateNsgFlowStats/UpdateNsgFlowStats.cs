@@ -17,6 +17,8 @@ namespace AzureNetSec
             CloudTable nsgFlowStatsOut, TraceWriter log )
         {
             IEnumerable<NetworkFlow> nsgFlows = JsonConvert.DeserializeObject<IEnumerable<NetworkFlow>>(nsgFlowsIn);
+            string nsgId = nsgFlows.FirstOrDefault().NsgID.Split('/')[8];
+            IEnumerable<NsgFlowStats> nsgStats = nsgFlowStatsIn.Where(x => x.PartitionKey == nsgId);
 
             // Filter input table on only US datacenter networks
             // NOTE: Table storate does not support certain LINQ queries such as 'StartsWith and Contains'
@@ -39,62 +41,59 @@ namespace AzureNetSec
 
             foreach (NetworkFlow flowItem in nsgFlows)
             {
-                IPAddress destAddress = IPAddress.Parse(flowItem.DestIP);
-                bool flowItemMatched = false;
+                NsgFlowStats nsgStatsItem = null;
 
-                IEnumerable<NsgFlowStats> nsgStats = nsgFlowStatsIn.Where(x => x.PartitionKey == flowItem.NsgID.Split('/')[8]);
-
-                foreach (AzureDatacenterSubnet azureNetwork in azureDcList)
+                try
                 {
-                    if (IPNetwork.Contains(azureNetwork.Network, destAddress))
-                    {
-                        NsgFlowStats nsgStatsItem = nsgStats.Where(x => x.DestIP == flowItem.DestIP && x.DestPort == flowItem.DestPort).FirstOrDefault();
-
-                        if (nsgStatsItem == null)
-                        {
-                            nsgStatsItem = new NsgFlowStats
-                            {
-                                PartitionKey = flowItem.NsgID.Split('/')[8],
-                                RowKey = Guid.NewGuid().ToString(),
-                                DestIP = flowItem.DestIP,
-                                DestPort = flowItem.DestPort,
-                                DestProtocol = flowItem.Protocol,
-                                AzureDatacenter = azureNetwork.Partition,
-                                AzureSubnet = azureNetwork.Subnet
-                            };
-                        }
-
-                        TableOperation operation = TableOperation.InsertOrReplace(nsgStatsItem);
-                        nsgFlowStatsOut.Execute(operation);
-
-                        log.Info($"{flowItem.DestIP}:{flowItem.DestPort} is in Azure subnet {azureNetwork.Network.ToString()}");
-                        flowItemMatched = true;
-                        break;
-                    }
+                    nsgStatsItem = nsgStats.Where(x => x.DestIP == flowItem.DestIP && x.DestPort == flowItem.DestPort).First();
+                }
+                catch(Exception ex)
+                {
+                    log.Warning($"Outbound IP address {flowItem.DestIP}:{flowItem.DestPort} not found in stats table");
                 }
 
-                if (flowItemMatched == false)
+                if (nsgStatsItem != null)
                 {
-                    NsgFlowStats nsgStatsItem = nsgStats.Where(x => x.DestIP == flowItem.DestIP && x.DestPort == flowItem.DestPort).FirstOrDefault();
+                    // Perform an update of the item so that we get an updated timestamp (i.e. last recoreded)
+                    TableOperation operation = TableOperation.InsertOrReplace(nsgStatsItem);
+                    nsgFlowStatsOut.Execute(operation);
+                }
+                else
+                {
+                    // we have not seen this destination IP address / port before. See if it matches an Azure datacenter subnet and add a record about it
+                    IPAddress destAddress = IPAddress.Parse(flowItem.DestIP);
+                    bool flowItemMatchesAzureSubnet = false;
 
-                    if (nsgStatsItem == null)
+                    nsgStatsItem = new NsgFlowStats
                     {
-                        nsgStatsItem = new NsgFlowStats
+                        PartitionKey = nsgId,
+                        RowKey = Guid.NewGuid().ToString(),
+                        DestIP = flowItem.DestIP,
+                        DestPort = flowItem.DestPort,
+                        DestProtocol = flowItem.Protocol
+                    };
+
+                    foreach (AzureDatacenterSubnet azureNetwork in azureDcList)
+                    {
+                        if (IPNetwork.Contains(azureNetwork.Network, destAddress))
                         {
-                            PartitionKey = flowItem.NsgID.Split('/')[8],
-                            RowKey = Guid.NewGuid().ToString(),
-                            DestIP = flowItem.DestIP,
-                            DestPort = flowItem.DestPort,
-                            DestProtocol = flowItem.Protocol,
-                            AzureDatacenter = "INTERNET",
-                            AzureSubnet = ""
-                        };
+                            nsgStatsItem.AzureDatacenter = azureNetwork.Partition;
+                            nsgStatsItem.AzureSubnet = azureNetwork.Subnet;
+                            log.Info($"{flowItem.DestIP}:{flowItem.DestPort} is in Azure subnet {azureNetwork.Network.ToString()}");
+                            flowItemMatchesAzureSubnet = true;
+                            break;
+                        }
                     }
+
+                    if (flowItemMatchesAzureSubnet == false)
+                    {
+                        nsgStatsItem.AzureDatacenter = "INTERNET";
+                        nsgStatsItem.AzureSubnet = "";
+                        log.Info($"{flowItem.DestIP}:{flowItem.DestPort} is INTERNET");
+                    }  
 
                     TableOperation operation = TableOperation.InsertOrReplace(nsgStatsItem);
                     nsgFlowStatsOut.Execute(operation);
-                    
-                    log.Info($"{flowItem.DestIP}:{flowItem.DestPort} is INTERNET");
                 }
             }
         }
