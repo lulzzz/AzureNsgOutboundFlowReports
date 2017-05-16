@@ -14,8 +14,8 @@ namespace AzureNetSec
 {
     public class UpdateAzureIpRanges
     {
-        // public static async void Run(TimerInfo myTimer, TraceWriter log, ICollection<DatacenterIpRange> outputTable)
-        public static async void Run(TimerInfo myTimer, TraceWriter log, CloudTable outputTable)
+        public static async void Run(TimerInfo myTimer, TraceWriter log, ICollector<DatacenterIpRanges> outputTable)
+       // public static async void Run(TimerInfo myTimer, TraceWriter log, CloudTable outputTable)
         {
             List<DatacenterIpRanges> datacenters = new List<DatacenterIpRanges>();
 
@@ -51,15 +51,14 @@ namespace AzureNetSec
                 {
                     string subnet = ipRange.Attribute("Subnet").Value;
 
-                    /*
-                    outputTable.Add(new DatacenterIpRange
+                    outputTable.Add(new DatacenterIpRanges
                     {
                         PartitionKey = partition,
                         RowKey = Guid.NewGuid().ToString(),
                         Subnet = subnet
                     });
-                    */
-
+                    
+                    /*
                     DatacenterIpRanges datacenter = new DatacenterIpRanges
                     {
                         PartitionKey = partition,
@@ -67,6 +66,7 @@ namespace AzureNetSec
                         Subnet = subnet
                     };
                     datacenters.Add(datacenter);
+                    */
 
                     /*
                     TableOperation insertOperation = TableOperation.Insert(datacenter);
