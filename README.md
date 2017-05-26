@@ -1,9 +1,9 @@
 # Introduction
-This is a collection of Azure Functions that provides a report of all outbound traffic for Network Security Groups (NSGs). This report is useful for anlayzing the impact when implementing more restrictive outbound network rules. Outbound traffic that is destined to known Azure datacenter subnets is labeled accordingly.
+This is an Azure Function App written in C# that generates a report of all outbound Internet traffic for Network Security Groups (NSGs) configured with Network Watcher. The report is useful for anlayzing the potential impact when planning to implement more restrictive Internet outbound rules. Outbound traffic that is destined to known Azure datacenter subnets is labeled accordingly. The Function App consists of three functions:
 
-![Outbound IP report](/images/outbound-ip-report.png)
+![Function App Overview](/images/overview.png)
 
-There are three functions in this solution:
+Each function has a specific role in the design:
 
 ## UpdateAzureIpRanges
 This is a timer-triggered function that downloads the published Microsoft Azure IP ranges and stores them in a storage table (DatacenterIpRanges).
@@ -13,6 +13,8 @@ This is a blob-triggered function that parses Network Security Group flow logs (
 
 ## UpdateNsgFlowStats
 This is a queue-triggered function that processes de-duplicated flow tuples from FilterNsgFlowEvents. Each destination IP address is compared to a recent list of known Azure IP subnets. If the destination IP address falls within such a subnet, it is documented in the output report.
+
+![Outbound IP report](/images/outbound-ip-report.png)
 
 # Getting Started
 
